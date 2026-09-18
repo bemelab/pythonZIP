@@ -1,0 +1,5 @@
+# Local test archives and PyInstaller output
+*.lzz
+build/
+dist/
+__pycache__/
