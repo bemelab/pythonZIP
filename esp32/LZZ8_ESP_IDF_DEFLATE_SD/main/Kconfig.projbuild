@@ -1,0 +1,32 @@
+menu "LZZ8 ESP-IDF Test Configuration"
+
+config LZZ_SD_MOSI_GPIO
+    int "SD SPI MOSI GPIO"
+    default 7
+
+config LZZ_SD_MISO_GPIO
+    int "SD SPI MISO GPIO"
+    default 2
+
+config LZZ_SD_CLK_GPIO
+    int "SD SPI CLK GPIO"
+    default 6
+
+config LZZ_SD_CS_GPIO
+    int "SD SPI CS GPIO"
+    default 10
+
+config LZZ_SD_MAX_FREQ_KHZ
+    int "SD SPI maximum frequency (kHz)"
+    range 400 20000
+    default 10000
+
+config LZZ_ARCHIVE_FILENAME
+    string "LZZ8 archive filename in SD root"
+    default "archive.lzz"
+
+config LZZ_OUTPUT_DIRECTORY
+    string "Extraction directory in SD root"
+    default "LZZ_OUT"
+
+endmenu
